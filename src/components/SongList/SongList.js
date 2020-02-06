@@ -13,7 +13,7 @@ const SongList = props => (
           <div className="songitems__box">
             <img 
               className="songitems__box-img" 
-              src={song.artworkUrl100.replace('100x100', '1200x1200')} // replace the default resolution of the images 
+              src={song.artworkUrl100.replace('100x100', '200x200')} // replace the default resolution of the images 
               alt={song.artistName}/>
               <div className="songitems__text">
                 <h5 className="songitems__title">
