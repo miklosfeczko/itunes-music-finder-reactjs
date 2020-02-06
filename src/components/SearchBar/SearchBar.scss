@@ -1,0 +1,80 @@
+@import '../../utils/variables';
+
+.form__input {
+    background: transparent;
+    border: 0;
+    border-bottom: solid 1px $scrollbar-color;
+    margin-left: 2px;
+    margin-right: 10px;  // 10px
+    width: 60%; //60%
+    padding: 0rem;
+    color: $header-icons;
+  }
+  
+  .form__button {
+    border: none;
+    background: transparent;
+    padding: 0.2rem 0.6rem; // 0.2rem 0.6rem
+    margin: 0 0.0rem;
+    border-radius: 1px;
+    font-size: 1.3rem; //1.3rem
+    text-transform: uppercase;
+    margin-left: 0.5rem; //0.5rem
+    cursor: pointer;
+  }
+
+.top-left-text {
+  margin: 0;
+  color: $header-text;
+}
+
+@media only screen and (max-width: 600px) {
+.form__input {
+  width: 6rem;
+}
+.form_total {
+  margin-right: 2rem;
+}
+.top-left-text {
+  margin-left: 1.2rem;
+}
+}
+
+@media only screen and (max-width: 420px) {
+  .form_total {
+    margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .form_total {
+    margin-right: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .form_total {
+    margin-right: 1.8rem;
+  }
+}
+
+
+@media only screen and (max-width: 360px) {
+  .form_total {
+    margin-right: .9rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .form_total {
+    margin-right: .6rem;
+  }
+
+  .form__button {
+    margin-left: 0rem;
+  }
+}
+
+
+
+
