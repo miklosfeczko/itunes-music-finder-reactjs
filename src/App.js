@@ -16,7 +16,7 @@ class App extends Component {
   onSearchSubmit = async (e) => {
     const musicTerm = e.target.elements.onSearchSubmit.value;
     e.preventDefault();
-    const api_results = await fetch(`https://itunes.apple.com/search?term=${musicTerm}&limit=200&entity=song`);
+    const api_results = await fetch(`https://itunes.apple.com/search?term=${musicTerm}&limit=25&entity=song`);
     const data = await api_results.json();
     if (data.results.length !== 0) { // if the returned object's length is 0 then we do nothing.
     this.setState({ 
